@@ -1,8 +1,11 @@
 const FILES_TO_CACHE = [
-   
-
-
-    
+   './index.html',
+   './styles.css',
+   './manifest.webmanifest',
+   './serviceWoker.js',
+   './idb.js',
+   './icons/icon-512x512.png',
+   './icons/icon-192x192.png'  
   ];
   
   const PRECACHE = 'precache-v1';
