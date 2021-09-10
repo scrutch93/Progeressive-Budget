@@ -3,6 +3,17 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
+
+
 const PORT = 3000;
 
 const app = express();
